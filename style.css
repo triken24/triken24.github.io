@@ -1,0 +1,550 @@
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0;
+    padding: 0;
+    background-image: url('1.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full height of the viewport */
+    color: white; /* Set default text color to white */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    padding: 20px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(18, 16, 92, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    box-shadow: 0 2px 5px #f7f304ef;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 20px auto; /* Center the content */
+}
+
+
+.icon{
+    width: 300px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #03e461;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #a72541;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover{
+    color: #ff7200;
+}
+h1, h2, h3 {
+    color: white; /* Set heading text color to white */
+}
+h1{
+    font-style: italic;
+}
+p {
+    line-height: 1.6; /* Improve line spacing */
+    color: #fcf8f8;
+}
+
+.bottom-right-box {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 400px;
+        min-height: 200px;
+        padding: 35px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        color: rgb(15, 18, 199);
+        z-index: 2;
+    }
+    
+    .bottom-right-box h3 {
+        font-family: Arial;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+    #dateTime p {
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 1.6;
+        color: white;
+        margin: 10px 0;
+    }
+ 
+    .second-page {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e6f3ff, #87ceeb);
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sem-heading {
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #1a1a1a; /* Dark color */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.second-page .content-box {
+    position: relative;
+    width: 75%;
+    min-height: 70vh;
+    margin-top: 20px;
+    padding: 40px;
+    background: rgba(15, 12, 12, 0.7);
+    border-radius: 15px;
+    color: rgb(167, 149, 149);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-page .content-box h2 {
+    font-family: Arial;
+    font-size: 45px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.second-page .content-box p {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.instruction-text {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-family: Arial;
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+}
+
+.unit-header {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    right: 40px;
+    width: calc(100% - 70px);
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.unit-header span {
+    display: inline-block;
+    text-align: left;
+    flex:2;
+}
+
+.unit-header span:first-child {
+    flex: 0.7;
+}
+
+.unit-header span:last-child {
+    text-align: left 930px;
+    
+}
+.unit-numbers {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 120px);
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.unit-numbers div {
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+}
+
+.unit-codes {
+    position: absolute;
+    top: 80px;
+    left: 108px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 120px);
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.unit-codes div {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.full-names {
+    position: absolute;
+    top: 80px;
+    left:300px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 120px);
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.full-names div {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+.lectures {
+    position: absolute;
+    top: 80px;
+    left: 600px;px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 120px);
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.lectures div {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+.contact {
+    position: absolute;
+    top: 80px;
+    left: 850px;px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 120px);
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.contact div {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+
+.third-page {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #87ceeb, #b0e0e6);
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-page .content-box {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.third-page .content-box h2 {
+    font-family: Arial;
+    font-size: 25px;
+    padding-bottom: 20px;
+    text-align: left;
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 40px;
+    line-height: 1.4;
+}
+
+.third-page .content-box p {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+.books-heading {
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fourth-page {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #d0dae2, #3d3d4b); /* Light white to lavender */
+    padding: 50px 0;
+}
+
+/* Fifth page with just background */
+.fifth-page {
+    position: relative; /* Ensure the page is positioned relative for absolute children */
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e6e6fa, #9370db); /* Lavender to medium purple */
+    padding: 50px 0;
+}
+
+.bottom-right-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 400px;
+    min-height: 200px;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    color: rgb(15, 18, 199);
+    z-index: 2;
+}
+
+
+.third-page .image-gallery {
+    display: flex;
+    flex-direction: column; /* Stack lines vertically */
+    margin-top: 20px; /* Space above the image gallery */
+}
+
+.third-page .first-line {
+    display: flex; /* Use flexbox for the first line */
+    justify-content: space-between; /* Space images evenly */
+}
+
+.third-page .second-line {
+    display: flex; /* Use flexbox for the second line */
+    justify-content: space-between; /* Align images to the left */
+}
+
+.third-page figure {
+    width: 13%; /* Set width to 13% */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the caption */
+}
+
+.third-page img {
+    width: 100%; /* Make the image take the full width of the figure */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Round the edges of the images */
+}
+
+.third-page .figcaption {
+    font-size: 14px; /* Adjust font size as needed */
+    color: white; /* Set text color */
+    margin-top: 5px; /* Space above the caption */
+}
+
+.revision-heading {
+    text-align: center; /* Center the heading */
+    font-size: 30px; /* Adjust font size as needed */
+    color: rgb(40, 14, 184); /* Set text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.projects-heading {
+    text-align: center; /* Center the heading */
+    font-size: 30px; /* Adjust font size as needed */
+    color: rgb(240, 142, 14); /* Set text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.projects-description {
+    text-align: left; /* Align the sentence to the left */
+    font-size: 18px; /* Keep the font size */
+    color: rgb(14, 3, 3); /* Set text color */
+    margin-bottom: 20px; /* Space below the sentence */
+    margin-left: 20px; /* Optional: Add some left margin for spacing */
+}
+
+.footer-text {
+    text-align: center; /* Center the text */
+    font-size: 16px; /* Adjust font size as needed */
+    color: rgb(15, 15, 15); /* Set text color */
+    margin-top: 20px; /* Space above the footer text */
+    position: absolute; /* Position it at the bottom */
+    bottom: 20px; /* Distance from the bottom of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+}
+
+.revision-description {
+    text-align: left; /* Align the sentence to the left */
+    font-size: 18px; /* Adjust font size as needed */
+    color: rgb(26, 8, 8); /* Set text color */
+    margin: 10px 0; /* Space above and below the sentence */
+    margin-left: 0; /* Start from the left margin */
+}
+
+.end-page {
+    background-color: #282c34; /* Dark background */
+    color: white; /* White text */
+    padding: 40px 20px; /* Padding around the content */
+    text-align: center; /* Center text */
+}
+
+.end-content {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+}
+
+h2 {
+    font-size: 28px; /* Heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+h3 {
+    font-size: 22px; /* Subheading size */
+    margin-top: 20px; /* Space above subheading */
+}
+
+p {
+    font-size: 16px; /* Paragraph size */
+    margin: 10px 0; /* Space above and below paragraphs */
+}
+
+.contact-info, .social-media {
+    margin: 20px 0; /* Space around sections */
+}
+
+.social-media a {
+    margin: 0 10px; /* Space between social media links */
+    color: #61dafb; /* Light blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.image-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Space above and below the image */
+}
+
+.centered-image {
+    width: 300px; /* Set a specific width */
+    height: 300px; /* Set a specific height */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 2px solid #fff; /* Optional: add a border for better visibility */
+}
+
+.fourth-page.image-gallery {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space images evenly */
+    margin-top: 20px; /* Space above the image gallery */
+}
+
+.fourth-page .gallery-image {
+    width: 400px; /* Set a specific width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-left: 100px;
+}
+
+.fourth-page .figure {
+    text-align: left; /* Center the caption under the image */
+    right: 20px; /* Space around each figure */
+    margin-top: 10px;
+}
+
+.fourth-page.figcaption {
+    font-size: 14px; /* Font size for the caption */
+    color: #0e0505; /* Color for the caption text */
+}
+
+    

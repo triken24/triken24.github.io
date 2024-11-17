@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Webpage Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">ENG WEB </h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">ADS</a></li>
+                        <li><a href="#">DESIGN</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+            
+                    <h3>Welcome to ENG WEB</h3>
+                    <p>Let's share ,learn and grow together</p>
+                
+        </div> 
+                
+                <div class="bottom-right-box">
+                    <h3>Current Date & Time</h3>
+                    <div id="dateTime">
+                        <p id="day"></p>
+                        <p id="date"></p>
+                        <p id="time"></p>
+                    </div>
+                </div>
+
+                <!-- Add this script tag at the bottom of your content div -->
+                <script>
+                    function updateDateTime() {
+                        const now = new Date();
+                        
+                        // Get day
+                        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                        const day = days[now.getDay()];
+                        document.getElementById('day').textContent = `Day: ${day}`;
+                        
+                        // Get date
+                        const date = now.toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                        document.getElementById('date').textContent = `Date: ${date}`;
+                        
+                        // Get time
+                        const time = now.toLocaleTimeString('en-US', {
+                            hour: '2-digit',
+                            minute: '2-digit',
+                            second: '2-digit'
+                        });
+                        document.getElementById('time').textContent = `Time: ${time}`;
+                    }
+
+                    // Update time every second
+                    setInterval(updateDateTime, 1000);
+
+                    // Initial call
+                    updateDateTime();
+                </script>
+            </div>
+        </div>
+
+        <div class="second-page">
+            <div class="page-content">
+                <h1 class="sem-heading">SEM UNITS</h1>
+                <div class="content-box">
+                    <div class="instruction-text">Click unit code to access pdf</div>
+                    <div class="unit-header">
+                        <span>NO.</span>
+                        <span>UNITCODE</span>
+                        <span>FULLNAME</span>
+                        <span>LECTURES</span>
+                        <span>CONTACT</span>
+                    </div>
+                    <div class="unit-numbers">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                    </div>
+                    <div class="unit-codes">
+                        <div>EENG 215</div>
+                        <div>EENG 231</div>
+                        <div>EENG 232</div>
+                        <div>EENG 271</div>
+                        <div>EENG 291</div>
+                        <div>MATH 221</div>
+                        <div>MATH 241</div>
+                        <div>PHIL 100</div>
+                    </div>
+                    <div class="full-names">
+                        <div>Workshop Practice III</div>
+                        <div>Electrical Engineering Materials</div>
+                        <div>Electromagnetic Field Theory</div>
+                        <div>Transducers and Sensors</div>
+                        <div>Physical Electronics</div>
+                        <div>Calculus II</div>
+                        <div>Probability and Statistics</div>
+                        <div>Introduction to Philosophy</div>
+                    </div>
+                    <div class="lectures">
+                        <div>Eng Pius Njunguna </div>
+                        <div>EENG </div>
+                        <div>EENG </div>
+                        <div>EENG </div>
+                        <div>EENG </div>
+                        <div>MATH </div>
+                        <div>MATH </div>
+                        <div>PHIL </div>
+                    </div>
+                    <div class="contact">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+ 
+        <div class="third-page">
+            <div class="page-content">
+                <h1 class="books-title">BOOKS LIBRARY</h1>
+                <div class="content-box">
+                    <h2>Click download to acces books</h2>
+                    
+                    <div class="image-gallery">
+                        <div class="first-line">
+                            <figure>
+                                <img src="p1.jpeg" alt="Image 1" />
+                                <figcaption>Electrical Technology Vol ii Download</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="p2.jpeg" alt="Image 2" />
+                                <figcaption>Culculus Solutions pdf Download</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="p3.jpeg" alt="Image 3" />
+                                <figcaption>Electrical Technology Vol iv Download</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="p4.jpeg" alt="Image 4" />
+                                <figcaption>Elements of Electromagnetics Download</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="p5.jpeg" alt="Image 5" />
+                                <figcaption>Electrical Technology Vol iii Download</figcaption>
+                            </figure>
+                        </div>
+                        <div class="second-line">
+                            <figure>
+                                <img src="p6.jpeg" alt="Image 6" />
+                                <figcaption>Electrical Circuit Theory and Technology Download</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="p7.jpeg" alt="Image 7" />
+                                <figcaption>Hughes Electrical and Electronic Technology 11th Edition Download</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="p8.jpeg" alt="Image 8" />
+                                <figcaption>Electrical Technology Vol i Download</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth page -->
+        <div class="fourth-page">
+            <div class="page-content">
+                <h1 class="revision-heading">REVISION PAPERS & CLASS PHOTOS</h1>
+                <p class="revision-description">Click view to access available photos or past papers for revision.</p>
+                <div class="content-box">
+                    <!-- You can add content related to revision papers here -->
+                </div>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="p9.jpg" alt="Description of p9" class="gallery-image">
+                        <figcaption>View Revision papers </figure>
+                    <figure>
+                        <img src="p10.jpg" alt="Description of p10" class="gallery-image">
+                        <figcaption>View Photos</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth page -->
+        <div class="fifth-page">
+            <div class="page-content">
+                <h1 class="projects-heading">CLASS PROJECTS</h1>
+                <p class="projects-description">Projects will be posted here.</p>
+                <div class="content-box">
+                    <!-- You can add content related to class projects here -->
+                </div>
+                <div class="footer-text">If the physics says it's possible then the engineers will find a way.</div>
+            </div>
+        </div>
+
+        <div class="end-page">
+            <div class="end-content">
+                <h2>Thank You for Visiting!</h2>
+                <p>We hope you found the information you were looking for. If you have any questions or feedback, feel free to reach out!</p>
+                
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Email: <a href="mailto:lockheedmartins07@gmail.com">lockheedmartins07@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+254716559671">+254 716559671</a></p>
+                </div>
+
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    
+                </div>
+                <div class="image-container">
+                    <img src="p.avif" alt="Description of the image" class="centered-image">
+                </div>
+    
+
+                <div class="footer">
+                    <p>Copyright &copy; ENG WEB 2024. All rights reserved. <br> Created by Peter Kibe.</p>
+                </div>
+            </div>
+        </div>
+        
+      </body>
+</html>
